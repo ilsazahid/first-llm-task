@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 
 # Load the saved model and scaler
 model = load_model('heart_disease_model.h5')
-with open('scaler(1).pkl', 'rb') as f:
+with open('scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
 st.title("Heart Disease Prediction App")
